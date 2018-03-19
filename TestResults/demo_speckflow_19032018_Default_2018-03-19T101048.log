@@ -1,0 +1,48 @@
+﻿2018-03-19T10:10:47.8735716+05:30;VSTestExecutionThread;Info;SpecFlow+Runner execution started
+2018-03-19T10:10:47.9936385+05:30;VSTestExecutionThread;Info;SpecRun Evaluation Mode: Please purchase at http://www.specflow.org/plus to remove test execution delay.
+2018-03-19T10:10:47.9936385+05:30;VSTestExecutionThread;Info;SpecRun: running tests in C:\Users\sathe\source\repos\demo_speckflow_19032018\demo_speckflow_19032018\bin\Debug\demo_speckflow_19032018.dll
+2018-03-19T10:10:47.9936385+05:30;VSTestExecutionThread;Info;Profile: Default
+2018-03-19T10:10:58.0869196+05:30;Thread#13;Info;Discovering target: Default
+2018-03-19T10:10:58.0869196+05:30;Thread#13;Info;Discovering tests from assembly: C:\Users\sathe\source\repos\demo_speckflow_19032018\demo_speckflow_19032018\bin\Debug\demo_speckflow_19032018.dll
+Appdomain Disposed
+Test Suite Dump
+#0: demo_speckflow_19032018/Default - 
+#1: Default - 
+#2: demo_speckflow_19032018 - 
+#5: Country - 
+#7: Check that response by calling code and by capital city with 371 - TestAssembly:demo_speckflow_19032018/Feature:Country/Scenario:Check+that+response+by+calling+code+and+by+capital+city+with+371
+End: Test Suite Dump
+Thread#0:Scheduler: get next test for thread 0
+Thread#:Scheduler: testitem #7 from normal test queue 
+Thread#0:Scheduler: considering testitem #7 for thread 0
+Thread#0:TestItem#7:testItemMatchesCurrentTestThread:UnSpecific
+Thread#0:TestItem#7:runsOnOneOtherThreadSpecific:False
+Thread#0:TestItem#7:runsOnOneOtherThreadUnspecific:False
+Thread#0:Scheduler: using testitem #7 for thread 0
+Thread#0:Scheduler: Test #7 is scheduled for thread
+Thread#0:Scheduler: with testItemExecutionIndex 0
+Thread #0: creating new test thread executor for demo_speckflow_19032018, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null (target: Default)
+Loading SpecRun type 'TechTalk.SpecRun.Framework.TestAssemblyExecutor' from: C:\Users\sathe\AppData\Local\Temp\VisualStudioTestExplorerExtensions\SpecRun.Runner.1.7.0\tools\TechTalk.SpecRun.Framework.Executor.dll
+Thread#0: Test #7/0 is started on thread #0
+Thread#0:T:-> Using app.config
+Thread#0:B:Given Calling a API and I entered Capital : Tallinn and Code : 371
+Thread#0:T: Getting Details from - api:{/rest/v2/capital/{capital} 
+Thread#0:T:result : False
+Thread#0:T:done: CountrySteps.GetCountryDetailsWithCapitalAndCode("Tallinn", 371) (1.1s)
+Thread#0:B:Then the case should failure
+Thread#0:T:done: CountrySteps.ThenTheCaseShouldFailure() (0.0s)
+Thread#0:Scheduler: get next test for thread 0
+Thread#:Scheduler: at the end of normal test queue
+Thread#0:Scheduler: enumerator for thread is at end
+Thread#0:Scheduler: No more tests for thread
+Thread#0: Test #7/0 is finished on thread #0 as Succeeded within 1.5874462 seconds
+Appdomain Disposed
+Thread#-1:Scheduler: get next test for thread -1
+Thread#:Scheduler: at the end of normal test queue
+Thread#-1:Scheduler: enumerator for thread is at end
+Total: 1
+Succeeded: 1
+Ignored: 0
+Pending: 0
+Skipped: 0
+Failed: 0
