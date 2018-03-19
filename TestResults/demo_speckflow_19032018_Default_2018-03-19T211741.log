@@ -1,0 +1,208 @@
+﻿2018-03-19T21:17:41.0353764+05:30;VSTestExecutionThread;Info;SpecFlow+Runner execution started
+2018-03-19T21:17:41.1760019+05:30;VSTestExecutionThread;Info;SpecRun Evaluation Mode: Please purchase at http://www.specflow.org/plus to remove test execution delay.
+2018-03-19T21:17:41.1760019+05:30;VSTestExecutionThread;Info;SpecRun: running tests in C:\demo\src\demo_speckflow_19032018_1\demo_speckflow_19032018\bin\Debug\demo_speckflow_19032018.dll
+2018-03-19T21:17:41.1760019+05:30;VSTestExecutionThread;Info;Profile: Default
+2018-03-19T21:17:49.3946322+05:30;Thread#16;Info;Discovering target: Default
+2018-03-19T21:17:49.3946322+05:30;Thread#16;Info;Discovering tests from assembly: C:\demo\src\demo_speckflow_19032018_1\demo_speckflow_19032018\bin\Debug\demo_speckflow_19032018.dll
+Appdomain Disposed
+Test Suite Dump
+#0: demo_speckflow_19032018/Default - 
+#1: Default - 
+#2: demo_speckflow_19032018 - 
+#3: Calculator - 
+#5: Country - 
+#4: Add two numbers - TestAssembly:demo_speckflow_19032018/Feature:Calculator/Scenario:Add+two+numbers
+#6: Check that response by calling code and by capital city with 372 - TestAssembly:demo_speckflow_19032018/Feature:Country/Scenario:Check+that+response+by+calling+code+and+by+capital+city+with+372
+#7: Check that response by calling code and by capital city with 371 - TestAssembly:demo_speckflow_19032018/Feature:Country/Scenario:Check+that+response+by+calling+code+and+by+capital+city+with+371
+#8: Find Countries in regions for example for asia - TestAssembly:demo_speckflow_19032018/Feature:Country/Scenario:Find+Countries+in+regions+for+example+for+asia
+#9: Find Countries in regions for example for europe - TestAssembly:demo_speckflow_19032018/Feature:Country/Scenario:Find+Countries+in+regions+for+example+for+europe
+#10: Check country and expected bordering countries in given region - TestAssembly:demo_speckflow_19032018/Feature:Country/Scenario:Check+country+and+expected+bordering+countries+in+given+region
+End: Test Suite Dump
+Thread#0:Scheduler: get next test for thread 0
+Thread#:Scheduler: testitem #4 from normal test queue 
+Thread#0:Scheduler: considering testitem #4 for thread 0
+Thread#0:TestItem#4:testItemMatchesCurrentTestThread:UnSpecific
+Thread#0:TestItem#4:runsOnOneOtherThreadSpecific:False
+Thread#0:TestItem#4:runsOnOneOtherThreadUnspecific:False
+Thread#0:Scheduler: using testitem #4 for thread 0
+Thread#0:Scheduler: Test #4 is scheduled for thread
+Thread#0:Scheduler: with testItemExecutionIndex 0
+Thread #0: creating new test thread executor for demo_speckflow_19032018, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null (target: Default)
+Loading SpecRun type 'TechTalk.SpecRun.Framework.TestAssemblyExecutor' from: C:\Users\sathe\AppData\Local\Temp\VisualStudioTestExplorerExtensions\SpecRun.Runner.1.7.0\tools\TechTalk.SpecRun.Framework.Executor.dll
+Thread#0: Test #4/0 is started on thread #0
+Thread#0:T:-> Using app.config
+Thread#0:B:Given I have entered 50 into the calculator
+Thread#0:T:done: CalculatorSteps.GivenIHaveEnteredIntoTheCalculator(50) (0.0s)
+Thread#0:B:And I have also entered 70 into the calculator
+Thread#0:T:done: CalculatorSteps.GivenIHaveAlsoEnteredIntoTheCalculator(70) (0.0s)
+Thread#0:B:When I press add
+Thread#0:T:done: CalculatorSteps.WhenIPressAdd() (0.0s)
+Thread#0:B:Then the result should be 120 on the screen
+Thread#0:T:done: CalculatorSteps.ThenTheResultShouldBeOnTheScreen(120) (0.0s)
+Thread#0:Scheduler: get next test for thread 0
+Thread#:Scheduler: testitem #6 from normal test queue 
+Thread#0:Scheduler: considering testitem #6 for thread 0
+Thread#0:TestItem#6:testItemMatchesCurrentTestThread:UnSpecific
+Thread#0:TestItem#6:runsOnOneOtherThreadSpecific:False
+Thread#0:TestItem#6:runsOnOneOtherThreadUnspecific:False
+Thread#0:Scheduler: using testitem #6 for thread 0
+Thread#0:Scheduler: Test #6 is scheduled for thread
+Thread#0:Scheduler: with testItemExecutionIndex 0
+Thread#0: Test #4/0 is finished on thread #0 as Succeeded within 0.6956409 seconds
+Thread#0: Test #6/0 is started on thread #0
+Thread#0:B:Given Calling a API and I entered Capital : Tallinn and Code : 372
+Thread#0:T: Getting Details from - api:{/rest/v2/capital/{capital} 
+Thread#0:T:result : True
+Thread#0:T:done: CountrySteps.GetCountryDetailsWithCapitalAndCode("Tallinn", 372) (1.3s)
+Thread#0:B:Then the case should success
+Thread#0:T:done: CountrySteps.ThenTheCaseShouldSuccess() (0.0s)
+Thread#0:Scheduler: get next test for thread 0
+Thread#:Scheduler: testitem #7 from normal test queue 
+Thread#0:Scheduler: considering testitem #7 for thread 0
+Thread#0:TestItem#7:testItemMatchesCurrentTestThread:UnSpecific
+Thread#0:TestItem#7:runsOnOneOtherThreadSpecific:False
+Thread#0:TestItem#7:runsOnOneOtherThreadUnspecific:False
+Thread#0:Scheduler: using testitem #7 for thread 0
+Thread#0:Scheduler: Test #7 is scheduled for thread
+Thread#0:Scheduler: with testItemExecutionIndex 0
+Thread#0: Test #6/0 is finished on thread #0 as Succeeded within 1.255663 seconds
+Thread#0: Test #7/0 is started on thread #0
+Thread#0:B:Given Calling a API and I entered Capital : Tallinn and Code : 371
+Thread#0:T: Getting Details from - api:{/rest/v2/capital/{capital} 
+Thread#0:T:result : False
+Thread#0:T:done: CountrySteps.GetCountryDetailsWithCapitalAndCode("Tallinn", 371) (0.3s)
+Thread#0:B:Then the case should failure
+Thread#0:T:done: CountrySteps.ThenTheCaseShouldFailure() (0.0s)
+Thread#0:Scheduler: get next test for thread 0
+Thread#:Scheduler: testitem #8 from normal test queue 
+Thread#0:Scheduler: considering testitem #8 for thread 0
+Thread#0:TestItem#8:testItemMatchesCurrentTestThread:UnSpecific
+Thread#0:TestItem#8:runsOnOneOtherThreadSpecific:False
+Thread#0:TestItem#8:runsOnOneOtherThreadUnspecific:False
+Thread#0:Scheduler: using testitem #8 for thread 0
+Thread#0:Scheduler: Test #8 is scheduled for thread
+Thread#0:Scheduler: with testItemExecutionIndex 0
+Thread#0: Test #7/0 is finished on thread #0 as Succeeded within 0.3281106 seconds
+Thread#0: Test #8/0 is started on thread #0
+Thread#0:B:Given Calling a API and I entered region : asia
+Thread#0:T: Getting Details from - api:{/rest/v2/region/{region} 
+Thread#0:T:result : True
+Thread#0:T:done: CountrySteps.GetCountriesInRegion("asia") (0.8s)
+Thread#0:B:Then the system should return bordering countries more than 3
+Thread#0:T:done: CountrySteps.GetBorderingCountryMoreThanGivenInput(3) (0.0s)
+Thread#0:Scheduler: get next test for thread 0
+Thread#:Scheduler: testitem #9 from normal test queue 
+Thread#0:Scheduler: considering testitem #9 for thread 0
+Thread#0:TestItem#9:testItemMatchesCurrentTestThread:UnSpecific
+Thread#0:TestItem#9:runsOnOneOtherThreadSpecific:False
+Thread#0:TestItem#9:runsOnOneOtherThreadUnspecific:False
+Thread#0:Scheduler: using testitem #9 for thread 0
+Thread#0:Scheduler: Test #9 is scheduled for thread
+Thread#0:Scheduler: with testItemExecutionIndex 0
+Thread#0: Test #8/0 is finished on thread #0 as Succeeded within 0.8530039 seconds
+Thread#0: Test #9/0 is started on thread #0
+Thread#0:B:Given Calling a API and I entered region : europe
+Thread#0:T: Getting Details from - api:{/rest/v2/region/{region} 
+Thread#0:T:result : True
+Thread#0:T:done: CountrySteps.GetCountriesInRegion("europe") (0.3s)
+Thread#0:B:Then the system should return bordering countries more than 4
+Thread#0:T:error: Assert.AreEqual failed. Expected:<True>. Actual:<False>. 
+Thread#0:TestItem#9:Scheduler: reschedule tests for testitem #9
+Thread#0:Scheduler: get next test for thread 0
+Thread#:Scheduler: dequeuing a rescheduled testitem: #9
+Thread#0:Scheduler: considering testitem #9 for thread 0
+Thread#0:TestItem#9:testItemMatchesCurrentTestThread:UnSpecific
+Thread#0:TestItem#9:runsOnOneOtherThreadSpecific:False
+Thread#0:TestItem#9:runsOnOneOtherThreadUnspecific:False
+Thread#0:Scheduler: using testitem #9 for thread 0
+Thread#0:Scheduler: Test #9 is scheduled for thread
+Thread#0:Scheduler: with testItemExecutionIndex 1
+Thread#0: Test #9/0 is finished on thread #0 as Failed within 0.3862968 seconds
+Thread#0: Test #9/1 is started on thread #0
+Thread#0:B:Given Calling a API and I entered region : europe
+Thread#0:T: Getting Details from - api:{/rest/v2/region/{region} 
+Thread#0:T:result : True
+Thread#0:T:done: CountrySteps.GetCountriesInRegion("europe") (0.3s)
+Thread#0:B:Then the system should return bordering countries more than 4
+Thread#0:T:error: Assert.AreEqual failed. Expected:<True>. Actual:<False>. 
+Thread#0:Scheduler: get next test for thread 0
+Thread#:Scheduler: dequeuing a rescheduled testitem: #9
+Thread#0:Scheduler: considering testitem #9 for thread 0
+Thread#0:TestItem#9:testItemMatchesCurrentTestThread:UnSpecific
+Thread#0:TestItem#9:runsOnOneOtherThreadSpecific:False
+Thread#0:TestItem#9:runsOnOneOtherThreadUnspecific:False
+Thread#0:Scheduler: using testitem #9 for thread 0
+Thread#0:Scheduler: Test #9 is scheduled for thread
+Thread#0:Scheduler: with testItemExecutionIndex 2
+Thread#0: Test #9/1 is finished on thread #0 as Failed within 0.3280953 seconds
+Thread#0: Test #9/2 is started on thread #0
+Thread#0:B:Given Calling a API and I entered region : europe
+Thread#0:T: Getting Details from - api:{/rest/v2/region/{region} 
+Thread#0:T:result : True
+Thread#0:T:done: CountrySteps.GetCountriesInRegion("europe") (0.3s)
+Thread#0:B:Then the system should return bordering countries more than 4
+Thread#0:T:error: Assert.AreEqual failed. Expected:<True>. Actual:<False>. 
+Thread#0:Scheduler: get next test for thread 0
+Thread#:Scheduler: testitem #10 from normal test queue 
+Thread#0:Scheduler: considering testitem #10 for thread 0
+Thread#0:TestItem#10:testItemMatchesCurrentTestThread:UnSpecific
+Thread#0:TestItem#10:runsOnOneOtherThreadSpecific:False
+Thread#0:TestItem#10:runsOnOneOtherThreadUnspecific:False
+Thread#0:Scheduler: using testitem #10 for thread 0
+Thread#0:Scheduler: Test #10 is scheduled for thread
+Thread#0:Scheduler: with testItemExecutionIndex 0
+Thread#0: Test #9/2 is finished on thread #0 as Failed within 0.3182568 seconds
+Thread#0: Test #10/0 is started on thread #0
+Thread#0:B:Given Calling a API and I entered name : Malta
+Thread#0:T: Getting Details from - api:{/rest/v2/name/{name} 
+Thread#0:T:error: The remote server returned an error: (404) Not Found.
+Thread#0:B:Then the case should success
+Thread#0:T:skipped because of previous errors
+Thread#0:TestItem#10:Scheduler: reschedule tests for testitem #10
+Thread#0:Scheduler: get next test for thread 0
+Thread#:Scheduler: dequeuing a rescheduled testitem: #10
+Thread#0:Scheduler: considering testitem #10 for thread 0
+Thread#0:TestItem#10:testItemMatchesCurrentTestThread:UnSpecific
+Thread#0:TestItem#10:runsOnOneOtherThreadSpecific:False
+Thread#0:TestItem#10:runsOnOneOtherThreadUnspecific:False
+Thread#0:Scheduler: using testitem #10 for thread 0
+Thread#0:Scheduler: Test #10 is scheduled for thread
+Thread#0:Scheduler: with testItemExecutionIndex 1
+Thread#0: Test #10/0 is finished on thread #0 as Failed within 0.3618326 seconds
+Thread#0: Test #10/1 is started on thread #0
+Thread#0:B:Given Calling a API and I entered name : Malta
+Thread#0:T: Getting Details from - api:{/rest/v2/name/{name} 
+Thread#0:T:error: The remote server returned an error: (404) Not Found.
+Thread#0:B:Then the case should success
+Thread#0:T:skipped because of previous errors
+Thread#0:Scheduler: get next test for thread 0
+Thread#:Scheduler: dequeuing a rescheduled testitem: #10
+Thread#0:Scheduler: considering testitem #10 for thread 0
+Thread#0:TestItem#10:testItemMatchesCurrentTestThread:UnSpecific
+Thread#0:TestItem#10:runsOnOneOtherThreadSpecific:False
+Thread#0:TestItem#10:runsOnOneOtherThreadUnspecific:False
+Thread#0:Scheduler: using testitem #10 for thread 0
+Thread#0:Scheduler: Test #10 is scheduled for thread
+Thread#0:Scheduler: with testItemExecutionIndex 2
+Thread#0: Test #10/1 is finished on thread #0 as Failed within 0.312513 seconds
+Thread#0: Test #10/2 is started on thread #0
+Thread#0:B:Given Calling a API and I entered name : Malta
+Thread#0:T: Getting Details from - api:{/rest/v2/name/{name} 
+Thread#0:T:error: The remote server returned an error: (404) Not Found.
+Thread#0:B:Then the case should success
+Thread#0:T:skipped because of previous errors
+Thread#0:Scheduler: get next test for thread 0
+Thread#:Scheduler: at the end of normal test queue
+Thread#0:Scheduler: enumerator for thread is at end
+Thread#0:Scheduler: No more tests for thread
+Thread#0: Test #10/2 is finished on thread #0 as Failed within 0.3124982 seconds
+Appdomain Disposed
+Thread#-1:Scheduler: get next test for thread -1
+Thread#:Scheduler: at the end of normal test queue
+Thread#-1:Scheduler: enumerator for thread is at end
+Total: 6 (test executions: 10)
+Succeeded: 4
+Ignored: 0
+Pending: 0
+Skipped: 0
+Failed: 2

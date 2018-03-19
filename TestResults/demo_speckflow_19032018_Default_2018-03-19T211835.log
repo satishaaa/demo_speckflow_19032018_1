@@ -1,0 +1,83 @@
+﻿2018-03-19T21:18:34.8128876+05:30;VSTestExecutionThread;Info;SpecFlow+Runner execution started
+2018-03-19T21:18:35.0057509+05:30;VSTestExecutionThread;Info;SpecRun Evaluation Mode: Please purchase at http://www.specflow.org/plus to remove test execution delay.
+2018-03-19T21:18:35.0057509+05:30;VSTestExecutionThread;Info;SpecRun: running tests in C:\demo\src\demo_speckflow_19032018_1\demo_speckflow_19032018\bin\Debug\demo_speckflow_19032018.dll
+2018-03-19T21:18:35.0067496+05:30;VSTestExecutionThread;Info;Profile: Default
+2018-03-19T21:18:48.1859801+05:30;Thread#13;Info;Discovering target: Default
+2018-03-19T21:18:48.1869796+05:30;Thread#13;Info;Discovering tests from assembly: C:\demo\src\demo_speckflow_19032018_1\demo_speckflow_19032018\bin\Debug\demo_speckflow_19032018.dll
+Appdomain Disposed
+Test Suite Dump
+#0: demo_speckflow_19032018/Default - 
+#1: Default - 
+#2: demo_speckflow_19032018 - 
+#5: Country - 
+#9: Find Countries in regions for example for europe - TestAssembly:demo_speckflow_19032018/Feature:Country/Scenario:Find+Countries+in+regions+for+example+for+europe
+End: Test Suite Dump
+Thread#0:Scheduler: get next test for thread 0
+Thread#:Scheduler: testitem #9 from normal test queue 
+Thread#0:Scheduler: considering testitem #9 for thread 0
+Thread#0:TestItem#9:testItemMatchesCurrentTestThread:UnSpecific
+Thread#0:TestItem#9:runsOnOneOtherThreadSpecific:False
+Thread#0:TestItem#9:runsOnOneOtherThreadUnspecific:False
+Thread#0:Scheduler: using testitem #9 for thread 0
+Thread#0:Scheduler: Test #9 is scheduled for thread
+Thread#0:Scheduler: with testItemExecutionIndex 0
+Thread #0: creating new test thread executor for demo_speckflow_19032018, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null (target: Default)
+Loading SpecRun type 'TechTalk.SpecRun.Framework.TestAssemblyExecutor' from: C:\Users\sathe\AppData\Local\Temp\VisualStudioTestExplorerExtensions\SpecRun.Runner.1.7.0\tools\TechTalk.SpecRun.Framework.Executor.dll
+Thread#0: Test #9/0 is started on thread #0
+Thread#0:T:-> Using app.config
+Thread#0:B:Given Calling a API and I entered region : europe
+Thread#0:T: Getting Details from - api:{/rest/v2/region/{region} 
+Thread#0:T:result : True
+Thread#0:T:done: CountrySteps.GetCountriesInRegion("europe") (19.8s)
+Thread#0:B:Then the system should return bordering countries more than 4
+Thread#0:T:error: Assert.AreEqual failed. Expected:<True>. Actual:<False>. 
+Thread#0:TestItem#9:Scheduler: reschedule tests for testitem #9
+Thread#0:Scheduler: get next test for thread 0
+Thread#:Scheduler: dequeuing a rescheduled testitem: #9
+Thread#0:Scheduler: considering testitem #9 for thread 0
+Thread#0:TestItem#9:testItemMatchesCurrentTestThread:UnSpecific
+Thread#0:TestItem#9:runsOnOneOtherThreadSpecific:False
+Thread#0:TestItem#9:runsOnOneOtherThreadUnspecific:False
+Thread#0:Scheduler: using testitem #9 for thread 0
+Thread#0:Scheduler: Test #9 is scheduled for thread
+Thread#0:Scheduler: with testItemExecutionIndex 1
+Thread#0: Test #9/0 is finished on thread #0 as Failed within 23.0361943 seconds
+Thread#0: Test #9/1 is started on thread #0
+Thread#0:B:Given Calling a API and I entered region : europe
+Thread#0:T: Getting Details from - api:{/rest/v2/region/{region} 
+Thread#0:T:result : True
+Thread#0:T:done: CountrySteps.GetCountriesInRegion("europe") (12.2s)
+Thread#0:B:Then the system should return bordering countries more than 4
+Thread#0:T:error: Assert.AreEqual failed. Expected:<True>. Actual:<False>. 
+Thread#0:Scheduler: get next test for thread 0
+Thread#:Scheduler: dequeuing a rescheduled testitem: #9
+Thread#0:Scheduler: considering testitem #9 for thread 0
+Thread#0:TestItem#9:testItemMatchesCurrentTestThread:UnSpecific
+Thread#0:TestItem#9:runsOnOneOtherThreadSpecific:False
+Thread#0:TestItem#9:runsOnOneOtherThreadUnspecific:False
+Thread#0:Scheduler: using testitem #9 for thread 0
+Thread#0:Scheduler: Test #9 is scheduled for thread
+Thread#0:Scheduler: with testItemExecutionIndex 2
+Thread#0: Test #9/1 is finished on thread #0 as Failed within 15.5801852 seconds
+Thread#0: Test #9/2 is started on thread #0
+Thread#0:B:Given Calling a API and I entered region : europe
+Thread#0:T: Getting Details from - api:{/rest/v2/region/{region} 
+Thread#0:T:result : True
+Thread#0:T:done: CountrySteps.GetCountriesInRegion("europe") (5.8s)
+Thread#0:B:Then the system should return bordering countries more than 4
+Thread#0:T:error: Assert.AreEqual failed. Expected:<True>. Actual:<False>. 
+Thread#0:Scheduler: get next test for thread 0
+Thread#:Scheduler: at the end of normal test queue
+Thread#0:Scheduler: enumerator for thread is at end
+Thread#0:Scheduler: No more tests for thread
+Thread#0: Test #9/2 is finished on thread #0 as Failed within 7.1895943 seconds
+Appdomain Disposed
+Thread#-1:Scheduler: get next test for thread -1
+Thread#:Scheduler: at the end of normal test queue
+Thread#-1:Scheduler: enumerator for thread is at end
+Total: 1 (test executions: 3)
+Succeeded: 0
+Ignored: 0
+Pending: 0
+Skipped: 0
+Failed: 1
